@@ -67,15 +67,16 @@ Plug 'preservim/nerdcommenter'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'lervag/vimtex'
+Plug 'dracula/vim', { 'as': 'dracula' }
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
-colorscheme nord
+colorscheme dracula
 
 if !has('gui_running')
           set t_Co=256
   endif
-let g:airline_theme= 'nord'
+let g:airline_theme= 'base16_dracula'
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#ale#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
